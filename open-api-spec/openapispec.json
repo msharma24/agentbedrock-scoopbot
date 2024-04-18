@@ -1,0 +1,98 @@
+openapi: 3.0.0
+info:
+  title: Ice Cream Flavors and Customer Preferences API
+  version: 1.0.0
+  description: This API manages customer ice cream preferences and detailed ice cream flavor descriptions.
+servers:
+  - url: 'https://api.icecreamshop.com/v1'
+
+paths:
+  /customers:
+    get:
+      summary: List all customers
+      operationId: listCustomers
+      responses:
+        '200':
+          description: An array of customers
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Customer'
+
+  /customers/{customerId}:
+    get:
+      summary: Get a customer by ID
+      operationId: getCustomer
+      parameters:
+        - in: path
+          name: customerId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Detailed information of a customer
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        '404':
+          description: Customer not found
+
+  /flavors:
+    get:
+      summary: List all ice cream flavors
+      operationId: listFlavors
+      responses:
+        '200':
+          description: An array of ice cream flavors
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/IceCreamFlavor'
+
+  /flavors/{flavorId}:
+    get:
+      summary: Get an ice cream flavor by ID
+      operationId: getFlavor
+      parameters:
+        - in: path
+          name: flavorId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Detailed information about an ice cream flavor
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IceCreamFlavor'
+        '404':
+          description: Flavor not found
+
+components:
+  schemas:
+    Customer:
+      type: object
+      properties:
+        name:
+          type: string
+        traits:
+          type: array
+          items:
+            type: string
+
+    IceCreamFlavor:
+      type: object
+      properties:
+        name:
+          type: string
+        flavor:
+          type: string
+        description:
+          type: string

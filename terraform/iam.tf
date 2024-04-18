@@ -16,7 +16,7 @@ module "bedrock_agent_exec_iam_assumable_role" {
   create_role             = true
   create_instance_profile = true
 
-  role_name = "AmazonBedrockExecutionRoleForAgent_scoopbot_${local.random_pet}"
+  role_name = "AmazonBedrockExecutionRoleForAgent_scoopbot"
 
   custom_role_policy_arns = [
     "arn:aws:iam::aws:policy/CloudWatchLogsFullAccess",
