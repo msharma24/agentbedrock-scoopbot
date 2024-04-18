@@ -1,0 +1,79 @@
+{
+  "iceCreamFlavors": [
+    {
+      "name": "Hokey Pokey",
+      "flavor": "Hokey Pokey",
+      "description": "Vanilla ice cream with small, solid lumps of honeycomb toffee."
+    },
+    {
+      "name": "Manuka Honey",
+      "flavor": "Manuka Honey",
+      "description": "Rich ice cream flavored with authentic Manuka honey known for its distinctive, earthy taste."
+    },
+    {
+      "name": "Feijoa Sorbet",
+      "flavor": "Feijoa",
+      "description": "Refreshing sorbet made from the unique, aromatic feijoa fruit, offering a sweet yet tart flavor."
+    },
+    {
+      "name": "Lemon & Paeroa",
+      "flavor": "Lemon & Paeroa",
+      "description": "Ice cream flavored with New Zealand's famous soft drink, combining lemony freshness with a subtle ginger fizz."
+    },
+    {
+      "name": "Kiwi Fruit",
+      "flavor": "Kiwi",
+      "description": "Smooth, tangy kiwi fruit ice cream that captures the essence of freshly sliced kiwis."
+    },
+    {
+      "name": "Pavlova",
+      "flavor": "Pavlova",
+      "description": "Creamy ice cream with pieces of meringue and swirls of strawberry, mimicking the popular dessert."
+    },
+    {
+      "name": "Salted Caramel",
+      "flavor": "Salted Caramel",
+      "description": "Rich caramel ice cream with a hint of sea salt, offering a perfect blend of sweet and salty."
+    },
+    {
+      "name": "Black Doris Plum",
+      "flavor": "Plum",
+      "description": "Deep, rich plum ice cream made with Black Doris plums, offering a balance of sweet and tart flavors."
+    },
+    {
+      "name": "White Chocolate Raspberry",
+      "flavor": "White Chocolate Raspberry",
+      "description": "Creamy white chocolate ice cream swirled with sharp raspberry sauce."
+    },
+    {
+      "name": "Green Tea",
+      "flavor": "Green Tea",
+      "description": "Smooth and aromatic green tea ice cream, providing a refreshing and slightly bitter aftertaste."
+    },
+    {
+      "name": "Ginger Nut",
+      "flavor": "Ginger Nut",
+      "description": "A blend of spicy ginger ice cream with chunks of crunchy ginger nut biscuits."
+    },
+    {
+      "name": "Mango Lassi",
+      "flavor": "Mango Lassi",
+      "description": "Sweet and tangy mango ice cream inspired by the popular Indian yogurt drink."
+    },
+    {
+      "name": "Butterscotch Swirl",
+      "flavor": "Butterscotch",
+      "description": "Smooth vanilla ice cream with thick, gooey butterscotch swirls."
+    },
+    {
+      "name": "Lavender Honey",
+      "flavor": "Lavender Honey",
+      "description": "Floral lavender ice cream sweetened with a touch of honey, offering a soothing taste experience."
+    },
+    {
+      "name": "Peppermint Chocolate Chip",
+      "flavor": "Peppermint Chocolate Chip",
+      "description": "Fresh peppermint ice cream dotted with rich chocolate chips."
+    }
+  ]
+}
