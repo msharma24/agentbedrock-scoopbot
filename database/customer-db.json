@@ -1,0 +1,44 @@
+{
+  "customers": [
+    {
+      "name": "Emma Clarke",
+      "traits": ["vanilla", "chocolate", "strawberry"]
+    },
+    {
+      "name": "Liam Johnson",
+      "traits": ["hokey pokey", "salted caramel", "lemon & paeroa"]
+    },
+    {
+      "name": "Olivia Smith",
+      "traits": ["manuka honey", "feijoa sorbet", "kiwi"]
+    },
+    {
+      "name": "Noah Williams",
+      "traits": ["pavlova", "ginger nut", "green tea"]
+    },
+    {
+      "name": "Ava Taylor",
+      "traits": ["mango lassi", "lavender honey", "black doris plum"]
+    },
+    {
+      "name": "Sophia Brown",
+      "traits": ["white chocolate raspberry", "peppermint chocolate chip", "butterscotch swirl"]
+    },
+    {
+      "name": "Mason Davies",
+      "traits": ["ginger nut", "lemon & paeroa", "salted caramel"]
+    },
+    {
+      "name": "Isabella Wilson",
+      "traits": ["vanilla", "kiwi", "manuka honey"]
+    },
+    {
+      "name": "Lucas Anderson",
+      "traits": ["feijoa sorbet", "green tea", "hokey pokey"]
+    },
+    {
+      "name": "Mia Thompson",
+      "traits": ["pavlova", "mango lassi", "black doris plum"]
+    }
+  ]
+}
