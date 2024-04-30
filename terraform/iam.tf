@@ -14,7 +14,7 @@ module "bedrock_agent_exec_iam_assumable_role" {
 
   role_requires_mfa       = false
   create_role             = true
-  create_instance_profile = true
+  create_instance_profile = trueiam
 
   role_name = "AmazonBedrockExecutionRoleForAgent_scoopbot"
 
@@ -35,6 +35,7 @@ output "bedrock_exec_role_role_name" {
 
 
 resource "aws_iam_policy" "bedrock_foundation_model_policy" {
+
   name        = "BedrockFoundationModelPolicy"
   path        = "/"
   description = "Policy to allow invoking specific Bedrock foundation models"
@@ -59,6 +60,7 @@ resource "aws_iam_policy" "bedrock_foundation_model_policy" {
 
 
 resource "aws_iam_policy" "bedrock_knowledge_base_retrieve_policy" {
+
   name        = "BedrockKnowledgeBaseRetrievePolicy"
   path        = "/"
   description = "Policy to allow retrieving specific Bedrock knowledge bases"
