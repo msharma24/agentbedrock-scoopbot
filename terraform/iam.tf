@@ -22,7 +22,8 @@ module "bedrock_agent_exec_iam_assumable_role" {
     "arn:aws:iam::aws:policy/CloudWatchLogsFullAccess",
     "arn:aws:iam::aws:policy/AmazonS3FullAccess",
     "arn:aws:iam::aws:policy/AWSLambda_FullAccess",
-    aws_iam_policy.bedrock_foundation_model_policy.arn
+    aws_iam_policy.bedrock_foundation_model_policy.arn,
+    aws_iam_policy.bedrock_knowledge_base_retrieve_policy.arn
 
   ]
 }
@@ -50,6 +51,29 @@ resource "aws_iam_policy" "bedrock_foundation_model_policy" {
           "arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-instant-v1",
           "arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-v3",
           "arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-v2:1"
+        ]
+      },
+    ]
+  })
+}
+
+
+resource "aws_iam_policy" "bedrock_knowledge_base_retrieve_policy" {
+  name        = "BedrockKnowledgeBaseRetrievePolicy"
+  path        = "/"
+  description = "Policy to allow retrieving specific Bedrock knowledge bases"
+
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Sid    = "AmazonBedrockAgentRetrieveKnowledgeBasePolicyProd"
+        Effect = "Allow"
+        Action = [
+          "bedrock:Retrieve"
+        ]
+        Resource = [
+          "arn:aws:bedrock:${local.region}:${local.account_id}:knowledge-base/*"
         ]
       },
     ]
