@@ -10,6 +10,7 @@ paths:
   /customers:
     get:
       summary: List all customers
+      description: Retrieve a list of all registered customers.
       operationId: listCustomers
       responses:
         '200':
@@ -24,11 +25,13 @@ paths:
   /customers/{customerId}:
     get:
       summary: Get a customer by ID
+      description: Retrieve detailed information about a customer by their unique ID.
       operationId: getCustomer
       parameters:
         - in: path
           name: customerId
           required: true
+          description: The unique identifier of the customer.
           schema:
             type: string
       responses:
@@ -44,6 +47,7 @@ paths:
   /flavors:
     get:
       summary: List all ice cream flavors
+      description: Retrieve a list of all available ice cream flavors.
       operationId: listFlavors
       responses:
         '200':
@@ -58,11 +62,13 @@ paths:
   /flavors/{flavorId}:
     get:
       summary: Get an ice cream flavor by ID
+      description: Retrieve detailed information about an ice cream flavor by its unique ID.
       operationId: getFlavor
       parameters:
         - in: path
           name: flavorId
           required: true
+          description: The unique identifier of the ice cream flavor.
           schema:
             type: string
       responses:
