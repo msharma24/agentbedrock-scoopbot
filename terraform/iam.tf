@@ -14,7 +14,7 @@ module "bedrock_agent_exec_iam_assumable_role" {
 
   role_requires_mfa       = false
   create_role             = true
-  create_instance_profile = trueiam
+  create_instance_profile = true
 
   role_name = "AmazonBedrockExecutionRoleForAgent_scoopbot"
 

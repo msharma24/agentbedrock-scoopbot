@@ -5,3 +5,5 @@ terraform/.terraform.lock.hcl
 terraform/.terraform.lock.info
 terraform/.terraform.lock.info.backup
 terraform/.terraform.lock.hcl.backup
+terraform/.terraform.tfstate.lock.info
+terraform/builds
