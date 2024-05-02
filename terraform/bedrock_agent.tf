@@ -6,7 +6,7 @@ resource "aws_bedrockagent_agent" "scoopbot_delight_agent" {
   instruction                 = "You are an agent that helps customer purchase ice cream. Retreive the customer traits by customer name and then recommend theem ice cream flavor that best matches the customer trait. After customer indictes they would like to order the ice cream, please order for icecream"
   agent_resource_role_arn     = module.bedrock_agent_exec_iam_assumable_role.iam_role_arn
   idle_session_ttl_in_seconds = 600
-  foundation_model            = "anthropic.claude-v2"
+  foundation_model            = "anthropic.claude-v2:1"
 }
 
 #--------------------------------------------------------------
